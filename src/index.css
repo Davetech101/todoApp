@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  transition: color, background .2s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  overflow: hidden;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+html.lightmode:root{
+  --primary-color:hsl(236, 33%, 92%);
+  --secondary-color: hsl(0, 0%, 98%);
+  --tetiary-color: hsl(236, 9%, 61%);
+  --text-color:hsl(235, 19%, 35%);
+}
+
+:root{
+  --primary-color:hsl(235, 21%, 11%);
+  --secondary-color:hsl(235, 24%, 19%);
+  --tetiary-color:hsl(234, 11%, 52%);
+  --text-color: hsl(235, 14%, 69%);
+}
+
+::-webkit-scrollbar {
+  width:8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color:var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  background:var(--primary-color);
 }
